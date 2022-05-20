@@ -7,7 +7,8 @@ To run: execute by typing './simplechain [-h] [-p nprocs] [-c nchars] [-s sleept
 
 To clean: type 'make clean' to remove executable file.
 
-Note: This C program was developed on a Mac and gave output that was identical as characters in the textfile. When run in the Linux environment hoare, the output is only the same as the textfile for the first two processes.
+Note: This C program was developed on a Mac and gave output that was identical as characters in the textfile. When run in the Linux environment
+ hoare, the output is only the same as the textfile for the first process of each iteration.
 
 Tasks:
 1) Each time this program is run, the process IDs (those forked from the child processes) are assigned in consecutive order.
