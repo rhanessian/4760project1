@@ -1,15 +1,11 @@
-CC	= gcc
-CFLAGS	= -ggdb3
-CPPFLAGS= -DDEBUG=1
+CC = gcc
 
-.SUFFIXES:
-.SUFFIXES: .c .o
+TARGET = simplechain
 
-.c.o:
-	$(CC) $(CFLAGS) $(CPPFLAGS) -c $<
+all: $(TARGET)
 
-%.o: %.c
-	$(CC) -c $(CFLAGS) $(CPPFLAGS) -o $@ $<
+$(TARGET): $(TARGET).c
+        $(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
 
 clean:
-	rm *.o simplechain
+        $(RM) $(TARGET)
