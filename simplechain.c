@@ -8,7 +8,7 @@
 
 int main (int argc, char *argv[]) {
 	pid_t childpid = 0;
-	int i, n, c;
+	int i, j, c;
 	int nprocs = 4, nchars = 80, sleeptime = 3, niters = 1;
 	
 	opterr = 0;
@@ -43,7 +43,7 @@ int main (int argc, char *argv[]) {
 		}
 	}
 	
-	for (int j = 0; j < niters; j++) {
+	for (j = 0; j < niters; j++) {
 		wait(NULL);
 
 		sleep(sleeptime);
@@ -54,8 +54,9 @@ int main (int argc, char *argv[]) {
 //		fprintf(stderr, "child ID:%ld\n", (long)childpid);
 
 		char mybuf[nchars + 1];
+		int k;
 		
-		for (int k = 0; k < nchars; k++) {
+		for (k = 0; k < nchars; k++) {
 			mybuf[k] = getchar();
 
 		}
