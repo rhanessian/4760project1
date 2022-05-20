@@ -50,4 +50,3 @@ Linux 2.6 conforms to the POSIX requirements.  However, Linux 2.4
               delivers no signal, or a signal other than SIGCHLD to its
               parent upon termination.)  This option is ignored if
               __WALL is also specified.
-
