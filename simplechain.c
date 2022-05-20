@@ -58,12 +58,12 @@ int main (int argc, char *argv[]) {
 		
 		for (k = 0; k < nchars; k++) {
 			mybuf[k] = getchar();
-
 		}
 
 		mybuf[nchars] = '\0';
 		
 		fprintf(stderr, "PID: %ld: %s\n", (long)getpid(), mybuf);
 	}
+
 	return 0;
 }
